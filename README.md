@@ -20,7 +20,7 @@ The **word cloud** is produced using [Zingcharts' word cloud](https://www.zingch
 To get a copy of the project up and running, go to the [django-app](https://github.com/sounritesh/ai-article-analyzer/tree/f90962e955f698ac8249ed09f9a0b5d2a726d696) submodule.
 
 #### Requirements
-All libraries required to get the models trained can be installed from **requirements.txt** file inside the ML models folder. To get the project up and running, training the models is not required as they are already saved for the django project.
+All libraries required to get the models trained can be installed from **requirements.txt** file inside the **ML-models** folder. To get the project up and running, training the models is not required as they are already saved for the django project.
 
 ### Author
 [Ritesh Soun](https://github.com/sounritesh/)
