@@ -1,0 +1,3 @@
+[submodule "django-app"]
+	path = django-app
+	url = https://github.com/sounritesh/ai-article-analyzer.git
