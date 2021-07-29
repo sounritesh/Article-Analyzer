@@ -16,7 +16,7 @@ Although the classifier can detect 17 languages, due to the limitations of the k
 
 The **word cloud** is produced using [Zingcharts' word cloud](https://www.zingchart.com/docs/chart-types/wordcloud). It is fed **clean data** to do so. The raw text is tokenized, lemmatized and ridded of stopwords. This **text preprocessing** is done using [NLTK](https://www.nltk.org/).
 
-The **text summarization** is done using **Text Rank** algorithm where in the sentences in the article are represented as nodes in a graph and ranked on the basic of **cosine similarity** using **Page Rank**. This is done with the help of [NLTK](https://www.nltk.org/) and [Networkx](https://networkx.org/).
+The **text summarization** is done using **Text Rank** algorithm where in the sentences in the article are represented as nodes in a graph and ranked on the basis of **cosine similarity** using **Page Rank**. This is done with the help of [NLTK](https://www.nltk.org/) and [Networkx](https://networkx.org/).
 
 ### Getting Started
 To get a copy of the project up and running, go to the [django-app](https://github.com/sounritesh/ai-article-analyzer/tree/f90962e955f698ac8249ed09f9a0b5d2a726d696) submodule.
