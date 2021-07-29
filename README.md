@@ -1,6 +1,6 @@
 # Article-Analyzer
 ### Description
-It is a tool to analyze articles online. It takes article text or URL as input and processes the article and produces a word cloud, extracts keywords and calculates the word count. It leverages techniques like **web scraping, data cleaning, text preprocessing, tokenization and classification**.
+It is a tool to analyze articles online. It takes article text or URL as input and processes the article and produces a word cloud, extracts keywords, produces a summary and calculates the word count. It leverages techniques like **web scraping, data cleaning, text preprocessing, tokenization, text summarization and classification**.
 
 It supports 9 languages which includes **English, Arabic, German, French, Portuguese, Italian, Spanish, Dutch and Turkish**.
 
@@ -15,6 +15,8 @@ Models are dumped and loaded for use in the Django app using [Pickle](https://py
 Although the classifier can detect 17 languages, due to the limitations of the keyword extractor used, the tool can only support 9 of these languages. **Keyword extraction** is implemented using [yake](https://github.com/LIAAD/yake) which is fed with the text and language detected.
 
 The **word cloud** is produced using [Zingcharts' word cloud](https://www.zingchart.com/docs/chart-types/wordcloud). It is fed **clean data** to do so. The raw text is tokenized, lemmatized and ridded of stopwords. This **text preprocessing** is done using [NLTK](https://www.nltk.org/).
+
+The **text summarization** is done using **Text Rank** algorithm where in the sentences in the article are represented as nodes in a graph and ranked on the basic of **cosine similarity** using **Page Rank**. This is done with the help of [NLTK](https://www.nltk.org/) and [Networkx](https://networkx.org/).
 
 ### Getting Started
 To get a copy of the project up and running, go to the [django-app](https://github.com/sounritesh/ai-article-analyzer/tree/f90962e955f698ac8249ed09f9a0b5d2a726d696) submodule.
